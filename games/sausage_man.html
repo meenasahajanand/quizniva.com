@@ -1,0 +1,917 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chromegame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/index/img/favicon.png" type="image/x-icon">
+    <script src="../static/index/js/tailwindcss.3.4.3.js"></script>
+    <script src="../static/index/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="../at.alicdn.com/t/c/font_3854947_yzyx66mccfg.html" />
+    <link rel="stylesheet" href="../static/index/css/layout/iconfont.css" />
+    <link rel="stylesheet" href="../static/index/css/layout/index.css" />
+    <link rel="stylesheet" href="../static/index/css/layout/layout.css" />
+    <link rel="stylesheet" href="../static/index/css/hamburgers.min.css" />
+    <link rel="stylesheet" href="../static/index/css/main.css" />
+    <script src="../static/index/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/index/css/swiper-bundle.min.css" />
+    <script src="../static/index/js/jquery.min.js"></script>
+    <script src="../static/index/layui/layui.js"></script>
+    <script src="../static/index/js/main.js"></script>
+    <script src="../static/index/js/lazyload.min.js"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KK9GPSJX');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="detail-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK9GPSJX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="sticky top-0 z-[1000] w-full header bg-[#282932]">
+        <div class="container h-[56px] flex items-center justify-between mx-auto max-lg:h-[48px]">
+            <div class="flex items-center">
+                <button class="hidden hamburger hamburger--3dx max-lg:flex menu-btn mr-[10px]">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </button>
+                <a href="../index-2.html">
+                    <img src="../static/index/img/logo.png"
+                        class="w-[120px] h-[40px] object-cover max-lg:h-[32px] max-lg:w-[96px]" />
+                </a>
+            </div>
+            <div class="flex items-center gap-[8px]">
+                <ul
+                    class="flex items-center px-0 bg-transparent top-menu text-white gap-[8px] max-lg:hidden text-[14px]">
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/simulation.html"
+                            class="h-full w-full flex justify-center items-center">Simulation</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/adventure.html"
+                            class="h-full w-full flex justify-center items-center">Adventure</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/rpg.html" class="h-full w-full flex justify-center items-center">RPG</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/casual.html" class="h-full w-full flex justify-center items-center">Casual</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642]">
+                        <a href="../category.html" class="h-full w-full flex justify-center items-center">More
+                            <i class="iconfont icon-youjiantou ml-[5px] text-[#33FF6D]"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button
+                    class="search-btn h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-sousuo items-center justify-center leading-1 text-[18px] font-bold text-white"></button>
+            </div>
+        </div>
+    </header>
+
+    <menu class="menu fixed z-[1000] top-0 left-0 bottom-0 right-0 box-border bg-[rgba(0,0,0,0.5)]">
+        <nav class="nav bg-[#282932] py-[40px] flex flex-col items-center justify-center">
+            <div class="text-[22px] font-bold text-white">Browse by Genre</div>
+            <div class="mt-[16px] flex flex-wrap justify-center gap-[8px] font-bold text-[14px] px-[28px]">
+                <a href="../list/simulation.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Simulation</a>
+                <a href="../list/adventure.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Adventure</a>
+                <a href="../list/rpg.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">RPG</a>
+                <a href="../list/casual.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Casual</a>
+                <a href="../category.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">More
+                    <i class="iconfont icon-youjiantou ml-[5px] text-[#33FF6D]"></i></a>
+            </div>
+            <button
+                class="menu-close mt-[32px] h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-guanbi1 items-center justify-center leading-1 text-[16px] text-white"></button>
+        </nav>
+    </menu>
+
+    <!-- search -->
+    <div class="search fixed z-[1000] top-0 left-0 bottom-0 right-0 box-border bg-[rgba(0,0,0,0.5)]">
+        <div class="inner py-[40px] px-[36px] flex flex-col items-center justify-center bg-[#282932]">
+            <div class="text-[22px] font-bold text-white">Search</div>
+            <div
+                class="flex items-center border-2 border-[#343642] rounded-full bg-[#18171D] w-full max-w-[720px] mt-[24px]">
+                <input type="text" id="searchB" placeholder="Search for â€¦"
+                    class="h-[40px] px-[10px] w-full bg-transparent text-[14px] flex-1 text-white" />
+                <button onclick="search()"
+                    class="items-center leading-1 flex justify-center font-bold h-[40px] w-[117px] text-[#18171D] bg-[#33FF6D] rounded-full search-submit">
+                    <i class="iconfont icon-sousuo text-[16px] pt-[1px] mr-[2px]"></i>
+                    <span class="text-[14px]">Search</span>
+                </button>
+            </div>
+            <div class="mt-[16px] flex flex-wrap gap-[8px] font-bold text-[14px]">
+                <a href="../search6f826f82.html?key=Squid%20Game"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Squid
+                    Game</a>
+                <a href="../search647f647f.html?key=Bloons%20TD%206"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Bloons
+                    TD 6</a>
+                <a href="../search3f363f36.html?key=True_Skate"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">True_Skate</a>
+                <a href="../searchf9c7f9c7.html?key=Minecraft"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Minecraft</a>
+                <a href="../search9c139c13.html?key=%20Terraria"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                    Terraria</a>
+                <a href="../search3ef33ef3.html?key=Game"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Game</a>
+                <a href="../searche462e462.html?key=Stardew%20Valley"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Stardew
+                    Valley</a>
+            </div>
+            <button
+                class="search-close mt-[32px] h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-guanbi1 items-center justify-center leading-1 text-[16px] text-white"></button>
+        </div>
+    </div>
+
+    <!-- main -->
+    <main>
+        <div class="container mx-auto">
+            <div class="top-swiper swiper w-full overflow-hidden mt-[16px]">
+                <div class="swiper-wrapper px-[20px]">
+                    <a class="swiper-slide" href="roblox.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/7900acf549e4ecaa481943dec74f09cf.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="minecraft.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/f6f948b59338964698385b5bea54996b.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="royal_match.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/644393d9f684318b8e79115de2cbe664.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="five_nights_at_freddys.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/e0615a25c2f954b7629a28e01a8dac1c.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="poppy_playtime_chapter_1.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/a147d78ab7b94031b591d8124822813d.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="stardew_valley.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/5c25700a22c957efbd79a8d91597e660.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="toca_life_world_build_a_story.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240124/fbff7e539d12946a98d7b53f6af4d18b.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="stumble_guys.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240125/f25728a314923a32c6290999f610432a.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="terraria.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/d0027d1c7a82468725be8fa2aa35f4b6.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="scary_teacher_3d.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/bbfa66024cc6c9c0742fb7c627dab5b7.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="grand_theft_auto_vice_city.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/4be0a910b080d400e82401fc8642ee82.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="genshin_impact.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/f98c60fec8bf8c76ffffa32eb7d8a2e8.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="subway_surfers.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240125/2840ea898c55617d56ddac70717ce04e.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="poppy-playtime-chapter-2.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240124/63ddea0c5832090de5267788c519e495.jpg"
+                            class="object-cover" />
+                    </a>
+                    <a class="swiper-slide" href="gardenscapes.html">
+                        <img src="../static/index/img/lazy.png" class="lazy"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240126/216c000fd7a979ec9c623ebe82558112.jpg"
+                            class="object-cover" />
+                    </a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button swiper-button-prev">
+                    <i class="iconfont icon-zuojiantou text-white"></i>
+                </div>
+                <div class="swiper-button swiper-button-next">
+                    <i class="iconfont icon-youjiantou text-white"></i>
+                </div>
+            </div>
+            <div class="flex mt-[16px] max-lg:block">
+                <div class="flex-1 flex max-md:block">
+                    <div class="flex flex-col justify-between flex-1">
+                        <div class="flex items-center">
+                            <img src="../static/index/img/lazy.png"
+                                data-src="../uploads/attach/2024/09/20240910/6b793299dade7f7329e8c839db80361b.png"
+                                class="w-[120px] h-[120px] object-cover lazy rounded-[24px] mr-[16px] max-md:w-[80px] max-md:h-[80px]" />
+                            <div class="flex-1">
+                                <div
+                                    class="text-[24px] font-bold text-white line-clamp-1 leading-1 max-md:text-[20px] ">
+                                    Sausage Man </div>
+                                <div class="flex items-center text-[14px] text-[#666666] mt-[10px]  max-md:mt-[4px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                                    <span class="ml-[3px]"> 5</span>
+                                    <span class="ml-[12px]">Action</span>
+                                </div>
+                                <div class="flex items-center text-[12px] text-[#33FF6D]  mt-[10px] max-md:mt-[4px]">
+                                    <i class="iconfont icon-anquanbaozhang text-[12px] leading-[12px]"></i>
+                                    <span class="ml-[3px]">Safety</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border border-[#282932] rounded-[16px] p-[24px] max-md:mt-[12px]">
+                            <ul class="flex flex-col gap-[10px] text-[14px] text-[#666666] font-bold">
+                                <li class="flex items-center">
+                                    <div class="flex-[0_0_40%] flex items-center max-md:flex-1">
+                                        <img src="../static/index/img/icon/platform.svg" class="object-cover w-[18px]">
+                                        <span class="ml-[14px]">Platform:</span>
+                                    </div>
+                                    <div class="flex-1 text-white">
+                                        Android
+                                        Ios
+                                    </div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="flex-[0_0_40%] flex items-center max-md:flex-1">
+                                        <img src="../static/index/img/icon/version.svg" class="object-cover w-[18px]">
+                                        <span class="ml-[14px]">Version:</span>
+                                    </div>
+                                    <div class="flex-1 text-white">
+                                        17.63 </div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="flex-[0_0_40%] flex items-center max-md:flex-1">
+                                        <img src="../static/index/img/icon/size.svg" class="object-cover w-[18px]">
+                                        <span class="ml-[14px]">Size:</span>
+                                    </div>
+                                    <div class="flex-1 text-white">
+                                        1.87G </div>
+                                </li>
+                                <li class="flex items-center">
+                                    <div class="flex-[0_0_40%] flex items-center max-md:flex-1">
+                                        <img src="../static/index/img/icon/updated.svg" class="object-cover w-[18px]">
+                                        <span class="ml-[14px]">Updated:</span>
+                                    </div>
+                                    <div class="flex-1 text-white">
+                                        May 18, 2024 </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-[0_0_336px] ml-[16px]">
+                        <div class=" text-center text-[12px] text-[#666666]">
+                            Advertisement
+                        </div>
+                        <div class="mt-[6px]  mx-auto ">
+                           <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                                crossorigin="anonymous"></script>
+
+                            <script>
+                                window.googletag = window.googletag || { cmd: [] };
+                                googletag.cmd.push(function () {
+                                    googletag.defineSlot(
+                                        '/23316933318/Kanizaa.com_d1',
+                                        [[728, 90], [320, 100], [300, 250]],  // horizontal sizes
+                                        'div-gpt-ad-1765196244329-0'
+                                    ).addService(googletag.pubads());
+
+                                    googletag.pubads().enableSingleRequest();
+                                    googletag.enableServices();
+                                });
+                            </script>
+
+                            <div id="div-gpt-ad-1765196244329-0" style="text-align:center; margin:10px 0;">
+                                <script>
+                                    googletag.cmd.push(function () {
+                                        googletag.display('div-gpt-ad-1765196244329-0');
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-[0_0_300px]">
+                    <div class="flex-1 ml-[16px]">
+                        <div class="flex items-center border-b-2 border-[#282932] pb-[4px] mb-[16px]">
+                            <div class="text-[22px] text-white font-bold">Similar Games</div>
+                        </div>
+                        <div class="grid grid-cols-1 gap-[12px] max-lg:grid-cols-2 max-md:grid-cols-1">
+                            <a href="roblox.html"
+                                class="h-[40px] rounded-[16px] bg-[#282932] flex items-center justify-between">
+                                <div class="flex items-center flex-1">
+                                    <img src="../static/index/img/lazy.png"
+                                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/7900acf549e4ecaa481943dec74f09cf.jpg"
+                                        class="h-[40px] w-[40px] rounded-[16px] lazy object-cover">
+                                    <span class="ml-[12px] text-white font-bold line-clamp-1">Roblox</span>
+                                </div>
+                                <div class="flex items-center ml-[10px] pr-[16px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] lazy leading-[12px]"></i>
+                                    <span class="ml-[3px] text-[12px] text-[#666666]">5</span>
+                                </div>
+                            </a>
+                            <a href="minecraft.html"
+                                class="h-[40px] rounded-[16px] bg-[#282932] flex items-center justify-between">
+                                <div class="flex items-center flex-1">
+                                    <img src="../static/index/img/lazy.png"
+                                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/f6f948b59338964698385b5bea54996b.jpg"
+                                        class="h-[40px] w-[40px] rounded-[16px] lazy object-cover">
+                                    <span class="ml-[12px] text-white font-bold line-clamp-1">Minecraft</span>
+                                </div>
+                                <div class="flex items-center ml-[10px] pr-[16px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] lazy leading-[12px]"></i>
+                                    <span class="ml-[3px] text-[12px] text-[#666666]">5</span>
+                                </div>
+                            </a>
+                            <a href="royal_match.html"
+                                class="h-[40px] rounded-[16px] bg-[#282932] flex items-center justify-between">
+                                <div class="flex items-center flex-1">
+                                    <img src="../static/index/img/lazy.png"
+                                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/644393d9f684318b8e79115de2cbe664.jpg"
+                                        class="h-[40px] w-[40px] rounded-[16px] lazy object-cover">
+                                    <span class="ml-[12px] text-white font-bold line-clamp-1">Royal Match</span>
+                                </div>
+                                <div class="flex items-center ml-[10px] pr-[16px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] lazy leading-[12px]"></i>
+                                    <span class="ml-[3px] text-[12px] text-[#666666]">5</span>
+                                </div>
+                            </a>
+                            <a href="poppy_playtime_chapter_1.html"
+                                class="h-[40px] rounded-[16px] bg-[#282932] flex items-center justify-between">
+                                <div class="flex items-center flex-1">
+                                    <img src="../static/index/img/lazy.png"
+                                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/a147d78ab7b94031b591d8124822813d.jpg"
+                                        class="h-[40px] w-[40px] rounded-[16px] lazy object-cover">
+                                    <span class="ml-[12px] text-white font-bold line-clamp-1">Poppy Playtime Chapter
+                                        1</span>
+                                </div>
+                                <div class="flex items-center ml-[10px] pr-[16px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] lazy leading-[12px]"></i>
+                                    <span class="ml-[3px] text-[12px] text-[#666666]">5</span>
+                                </div>
+                            </a>
+                            <a href="terraria.html"
+                                class="h-[40px] rounded-[16px] bg-[#282932] flex items-center justify-between">
+                                <div class="flex items-center flex-1">
+                                    <img src="../static/index/img/lazy.png"
+                                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/d0027d1c7a82468725be8fa2aa35f4b6.jpg"
+                                        class="h-[40px] w-[40px] rounded-[16px] lazy object-cover">
+                                    <span class="ml-[12px] text-white font-bold line-clamp-1">Terraria</span>
+                                </div>
+                                <div class="flex items-center ml-[10px] pr-[16px]">
+                                    <i class="iconfont icon-xing text-[12px] text-[#FFD324] lazy leading-[12px]"></i>
+                                    <span class="ml-[3px] text-[12px] text-[#666666]">5</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center border-b-2 border-[#282932] mt-[22px] pb-[6px] mb-[18px]">
+                <div class="text-[22px] text-white font-bold">About Sausage Man</div>
+            </div>
+            <div class="text-[14px] leading-[20px] text-[#666666]">
+                <div class="detail-text overflow-hidden text-[14px] leading-[24px]">
+                    <p>Sausage Man is a popular multiplayer online game that captivates players. In this whimsical
+                        world, players embody charming sausage men, engaging with others in various ways and tackling
+                        numerous challenging tasks.</p>
+
+                    <p><strong>Gameplay Highlights:</strong></p>
+
+                    <p><strong>World Exploration:</strong> Players can freely traverse the expansive game world,
+                        unearthing hidden, mysterious locations and valuable treasures filled with surprises and
+                        unknowns.</p>
+
+                    <p><strong>Construction and Creativity:</strong> Utilizing an array of materials and props, players
+                        can unleash their creativity to construct unique buildings and masterpieces.</p>
+
+                    <p><strong>Combat and Cooperation:</strong> Engage with other players in real-time, whether by
+                        initiating thrilling battles or collaborating to overcome challenges. The game offers a diverse
+                        selection of weapons and skills for players to choose from.</p>
+
+                    <p><strong>Mission Challenges:</strong> The game features a variety of tasks and challenges.
+                        Successfully completing these missions not only rewards players with valuable prizes but also
+                        helps accumulate experience points.</p>
+
+                    <p><strong>Features:</strong></p>
+
+                    <p><strong>Multiplayer Online:</strong> The game facilitates online multiplayer interactions,
+                        allowing players to team up with friends for adventures or dive into exhilarating PvP battles.
+                    </p>
+
+                    <p><strong>Character Personalization:</strong> Players can customize their character's appearance,
+                        equipment, and skills based on their preferences, creating a distinctive sausage man persona.
+                    </p>
+
+                    <p><strong>Free Creation Platform:</strong> The game provides powerful creation tools, enabling
+                        players to fully explore their imagination and build incredible structures and creations.</p>
+
+                    <p><strong>Cross-Platform Play:</strong> Support for cross-platform gameplay allows players to
+                        seamlessly switch between devices, enjoying the game world with friends anytime, anywhere.</p>
+
+                    <p><br /></p>
+                </div>
+                <div class="flex justify-center show-more-btn-box">
+                    <button
+                        class="show-more-btn w-[160px] h-[32px] rounded-full flex items-center justify-center bg-[#282932] text-white text-[14px]">
+                        Show
+                        More
+                    </button>
+                </div>
+            </div>
+
+            <div class="mt-[17px]">
+                <div class=" mx-auto max-md:h-[325px]">
+                   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                                crossorigin="anonymous"></script>
+
+                            <script>
+                                window.googletag = window.googletag || { cmd: [] };
+                                googletag.cmd.push(function () {
+                                    googletag.defineSlot(
+                                        '/23316933318/Kanizaa.com_d1',
+                                        [[728, 90], [320, 100], [300, 250]],  // horizontal sizes
+                                        'div-gpt-ad-1765196244329-0'
+                                    ).addService(googletag.pubads());
+
+                                    googletag.pubads().enableSingleRequest();
+                                    googletag.enableServices();
+                                });
+                            </script>
+
+                            <div id="div-gpt-ad-1765196244329-0" style="text-align:center; margin:10px 0;">
+                                <script>
+                                    googletag.cmd.push(function () {
+                                        googletag.display('div-gpt-ad-1765196244329-0');
+                                    });
+                                </script>
+                            </div>
+
+                </div>
+                <div class="mt-[6px] text-center text-[12px] text-[#666666]">
+                    Advertisement
+                </div>
+            </div>
+
+            <div class="swiper-detail w-full overflow-hidden relative mt-[16px]">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/94963cb4a192fb514c3c9a05f0b12fc5.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/7b5c14e9496bdcaa67731dbef3ddbdd9.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/604eb6f610daf04a57c5fd7efb6270bb.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/9c82a82bb21d39224d37d6946579aae4.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/63d1f84305b5d491825a5508141468fb.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/86455633e505c3d175c5fbce4982fb7c.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                    <a class="swiper-slide w-[480px] h-[270px] rounded-[16px] overflow-hidden max-md:w-full max-md:h-[225px]"
+                        href="javascript:void(0);">
+                        <img src="../static/index/img/lazy.png"
+                            data-src="https://www.chromegamer.com/uploads/attach/2024/06/20240604/14e4ac0d99323d23c79df37199eb2951.jpg"
+                            class="object-cover lazy w-full h-full" /></a>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button swiper-button-prev hidden max-md:flex">
+                    <i class="iconfont icon-zuojiantou text-white"></i>
+                </div>
+                <div class="swiper-button swiper-button-next hidden max-md:flex">
+                    <i class="iconfont icon-youjiantou text-white"></i>
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-2 border-[#282932] mt-[22px] pb-[6px] mb-[24px]">
+                <div class="text-[22px] text-white font-bold">Get the Game</div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-[40px] h-[40px] rounded-full bg-[#282932] flex items-center justify-center">
+                    <img src="../static/index/img/icon/safe.svg" class="w-[20px]">
+                </div>
+                <div class="ml-[10px]">
+                    <p class="text-[14px] text-white font-bold">Good App Guaranteed:</p>
+                    <p class="text-[12px] text-[#666666] font-bold">This app passed the security test for virus,malware
+                        and
+                        other
+                        malicious attacks and doesnâ€™t contain any theats. </p>
+                </div>
+            </div>
+            <div class="flex gap-[16px] mt-[16px] max-lg:flex-col max-lg:items-center">
+                <a href="https://apps.apple.com/us/app/sausage-man/id1563750315" target="_blank"
+                    class="bg-[#282932] rounded-full h-[50px] flex flex-col items-center justify-center w-full  max-lg:max-w-[300px]">
+                    <div class="flex items-center">
+                        <img src="../static/index/img/icon/apple.svg" class="w-[16px]">
+                        <div class="text-white text-[14px] font-bold ml-[4px] hover:text-[#33FF6D]">Get it from Apple
+                            Store
+                        </div>
+                    </div>
+                    <p class="text-[12px] text-[#666666] font-bold">
+                    </p>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.GlobalSoFunny.Sausage&amp;hl=en"
+                    target="_blank"
+                    class="bg-[#282932] rounded-full h-[50px] flex flex-col items-center justify-center w-full max-lg:max-w-[300px]">
+                    <div class="flex items-center">
+                        <img src="../static/index/img/icon/google_play.svg" class="w-[16px]">
+                        <div class="text-white text-[14px] font-bold ml-[4px] hover:text-[#33FF6D]">Get it from Google
+                            Play
+                        </div>
+                    </div>
+                    <p class="text-[12px] text-[#666666] font-bold">
+                    </p>
+                </a>
+            </div>
+
+            <div class="mt-[17px]">
+                <div class=" mx-auto max-md:h-[325px]">
+                   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
+                                crossorigin="anonymous"></script>
+
+                            <script>
+                                window.googletag = window.googletag || { cmd: [] };
+                                googletag.cmd.push(function () {
+                                    googletag.defineSlot(
+                                        '/23316933318/Kanizaa.com_d2',
+                                        [[728, 90], [320, 100], [300, 250]],  // horizontal sizes
+                                        'div-gpt-ad-1765196322678-0'
+                                    ).addService(googletag.pubads());
+
+                                    googletag.pubads().enableSingleRequest();
+                                    googletag.enableServices();
+                                });
+                            </script>
+
+                            <div id="div-gpt-ad-1765196322678-0" style="text-align:center; margin:10px 0;">
+                                <script>
+                                    googletag.cmd.push(function () {
+                                        googletag.display('div-gpt-ad-1765196322678-0');
+                                    });
+                                </script>
+                            </div>
+
+                </div>
+                <div class="mt-[6px] text-center text-[12px] text-[#666666]">
+                    Advertisement
+                </div>
+            </div>
+
+            <div class="flex items-center border-b-2 border-[#282932] mt-[22px] pb-[6px] mb-[24px]">
+                <div class="text-[22px] text-white font-bold">Most Popular Games</div>
+            </div>
+            <div class="grid grid-cols-9 gap-[16px] max-lg:grid-cols-6 max-md:grid-cols-3">
+                <a href="roblox.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/7900acf549e4ecaa481943dec74f09cf.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Roblox" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Roblox </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="minecraft.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/f6f948b59338964698385b5bea54996b.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Minecraft" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Minecraft </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="royal_match.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/644393d9f684318b8e79115de2cbe664.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Royal Match" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Royal Match </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="five_nights_at_freddys.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/e0615a25c2f954b7629a28e01a8dac1c.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Five Nights at Freddy's" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Five Nights at Freddy's </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="poppy_playtime_chapter_1.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/a147d78ab7b94031b591d8124822813d.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Poppy Playtime Chapter 1" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Poppy Playtime Chapter 1 </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="stardew_valley.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/5c25700a22c957efbd79a8d91597e660.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Stardew Valley" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Stardew Valley </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="toca_life_world_build_a_story.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240124/fbff7e539d12946a98d7b53f6af4d18b.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Toca Life World: Build a Story" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Toca Life World: Build a Story </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="pubg_mobile.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/2aab8a5370cd59db926ebb98684d9a95.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="PUBG MOBILE" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        PUBG MOBILE </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="stumble_guys.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240125/f25728a314923a32c6290999f610432a.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Stumble Guys" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Stumble Guys </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="monument_valley.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/67ce2f398bbbbae843e4cbf033628965.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Monument Valley" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Monument Valley </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="terraria.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/d0027d1c7a82468725be8fa2aa35f4b6.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Terraria" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Terraria </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="scary_teacher_3d.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/bbfa66024cc6c9c0742fb7c627dab5b7.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Scary Teacher 3D" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Scary Teacher 3D </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="grand_theft_auto_vice_city.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/4be0a910b080d400e82401fc8642ee82.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Grand Theft Auto: Vice City" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Grand Theft Auto: Vice City </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="genshin_impact.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240129/f98c60fec8bf8c76ffffa32eb7d8a2e8.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Genshin Impact" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Genshin Impact </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="hill_climb_racing.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240126/f55b09b2c5456f1bfa2116507f5e3597.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Hill Climb Racing" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Hill Climb Racing </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="_hill_climb_racing_2.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240126/9663cc8bb2b6fd75993f386ddc99da53.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt=" Hill Climb Racing 2" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Hill Climb Racing 2 </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="subway_surfers.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240125/2840ea898c55617d56ddac70717ce04e.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Subway Surfers" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Subway Surfers </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+                <a href="candy_crush_jelly_saga.html" class="text-white hover:text-[#33FF6D]">
+                    <img src="../static/index/img/lazy.png"
+                        data-src="https://www.chromegamer.com/uploads/attach/2024/01/20240123/1c9e026ebc051c31c19541b345786b3d.jpg"
+                        class="object-cover w-full rounded-[24px] lazy shadow-[0_10px_10px_0_rgba(0,0,0,0.4)]"
+                        alt="Candy Crush Jelly Saga" />
+                    <div class="mt-[8px] text-[14px] font-bold line-clamp-1">
+                        Candy Crush Jelly Saga </div>
+                    <div class="flex items-center mt-[8px]">
+                        <i class="iconfont icon-xing text-[12px] text-[#FFD324] leading-[12px]"></i>
+                        <span class="text-[12px] text-[#666666] ml-[2px] font-bold leading-[12px]">5</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--footer  -->
+    <footer class="footer bg-[#282932] pt-[40px] box-border mt-[40px]">
+        <div class="container mx-auto text-white">
+            <div class="flex items-start justify-between max-sm:block">
+                <div class="flex flex-col mr-[24px] max-md:mr-0 max-sm:mt-0">
+                    <a href="#">
+                        <img src="../static/index/img/logo.png" class="w-[120px] h-[40px] object-cover" />
+                    </a>
+                    <div class="text-[14px] text-[#666666] max-w-[700px] max-sm:max-w-full leading-[20px] mt-[10px]">
+                        Gameya is a game review platform, we have professional reviewers
+                        to screen games, install, experience, to the final description of
+                        the feedback, and finally will experience a strong game
+                        recommended to users, if you have questions feel free to contact
+                        us!
+                    </div>
+                </div>
+                <a href="#" class="flex w-[320px] h-[160px] flex-[0_0_320px] max-w-[320px] mx-auto max-sm:mt-[16px]">
+                    <img src="../static/index/img/footer.png" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div
+                class="mt-[85px] h-[40px] max-sm:flex-col max-sm:h-[57px] max-sm:justify-center flex justify-between items-center border border-[#383838] border-x-0 border-b-0 max-lg:mt-[27px]">
+                <ul class="text-[12px] text-[#A9A9AD] flex gap-[24px] max-lg:justify-between">
+                    <li>
+                        <a href="../about/company.html">Company</a>
+                    </li>
+                    <li>
+                        <a href="../about/privacy.html">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="../about/use.html">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="../about/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="text-[12px] text-[#666666] max-sm:mt-[6px]">Copyright Â© 2024 chromegamer,All rights
+                    Reserved.</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var mySwiper = new Swiper(".swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // pagination: {
+            //   el: ".swiper-pagination",
+            //   dynamicBullets: true,
+            // },
+        });
+    </script>
+    <script src="../static/index/js/lazy.js"></script>
+    <script type="text/javascript" src="../static/index/js/xq_pv.js"></script>
+    <script>
+        new Swiper(".swiper-detail", {
+            slidesPerView: "auto",
+            spaceBetween: 8,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+        const showMoreBtn = document.querySelector(".show-more-btn");
+        const detailText = document.querySelector(".detail-text");
+        const showMoreBtnBox = document.querySelector(".show-more-btn-box");
+
+        showMoreBtn.addEventListener("click", function () {
+            detailText.classList.toggle("show");
+            showMoreBtnBox.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>

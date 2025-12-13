@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chromegame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../static/index/img/favicon.png" type="image/x-icon">
+    <script src="../static/index/js/tailwindcss.3.4.3.js"></script>
+    <script src="../static/index/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="../at.alicdn.com/t/c/font_3854947_yzyx66mccfg.html" />
+    <link rel="stylesheet" href="../static/index/css/layout/iconfont.css" />
+    <link rel="stylesheet" href="../static/index/css/layout/index.css" />
+    <link rel="stylesheet" href="../static/index/css/layout/layout.css" />
+    <link rel="stylesheet" href="../static/index/css/hamburgers.min.css" />
+    <link rel="stylesheet" href="../static/index/css/main.css" />
+    <script src="../static/index/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/index/css/swiper-bundle.min.css" />
+    <script src="../static/index/js/jquery.min.js"></script>
+    <script src="../static/index/layui/layui.js"></script>
+    <script src="../static/index/js/main.js"></script>
+    <script src="../static/index/js/lazyload.min.js"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KK9GPSJX');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK9GPSJX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="sticky top-0 z-[1000] w-full header bg-[#282932]">
+        <div class="container h-[56px] flex items-center justify-between mx-auto max-lg:h-[48px]">
+            <div class="flex items-center">
+                <button class="hidden hamburger hamburger--3dx max-lg:flex menu-btn mr-[10px]">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </button>
+                <a href="../index-2.html">
+                    <img src="../static/index/img/logo.png"
+                        class="w-[120px] h-[40px] object-cover max-lg:h-[32px] max-lg:w-[96px]" />
+                </a>
+            </div>
+            <div class="flex items-center gap-[8px]">
+                <ul
+                    class="flex items-center px-0 bg-transparent top-menu text-white gap-[8px] max-lg:hidden text-[14px]">
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/simulation.html"
+                            class="h-full w-full flex justify-center items-center">Simulation</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/adventure.html"
+                            class="h-full w-full flex justify-center items-center">Adventure</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/rpg.html" class="h-full w-full flex justify-center items-center">RPG</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                        <a href="../list/casual.html" class="h-full w-full flex justify-center items-center">Casual</a>
+                    </li>
+                    <li class="w-[110px] h-[36px] rounded-full bg-[#343642]">
+                        <a href="../category.html" class="h-full w-full flex justify-center items-center">More
+                            <i class="iconfont icon-youjiantou ml-[5px] text-[#33FF6D]"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button
+                    class="search-btn h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-sousuo items-center justify-center leading-1 text-[18px] font-bold text-white"></button>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="../static/index/js/jquery.validate.js"></script>
+    <script src="../static/index/js/jquery.form.min.js"></script>
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
+    <main>
+        <div class="container mx-auto">
+            <div class="flex items-center border-b-2 border-[#282932] mt-[46px] pb-[6px] mb-[16px]">
+                <div class="text-[22px] text-white font-bold">Contact us</div>
+            </div>
+            <div class="py-[20px]">
+                <form method="post" action="https://www.chromegamer.com/gamesApi/contact" id="form"
+                    novalidate="novalidate">
+                    <div class="grid grid-cols-1 max-xl:grid-cols-1 gap-[20px]">
+                        <input type="text"
+                            class="h-[50px] px-[20px] box-border border-2 border-[#343642] rounded-[16px] bg-[transparent] text-white"
+                            id="name" name="name" placeholder="Name" />
+                        <input type="text"
+                            class="h-[50px] px-[20px] box-border border-2 border-[#343642] rounded-[16px] bg-[transparent] text-white"
+                            id="email" name="email" placeholder="EMail Address" />
+                        <input
+                            class="h-[50px] px-[20px] box-border border-2 border-[#343642] rounded-[16px] bg-[transparent] text-white"
+                            type="text" id="why" name="reason" placeholder="Why are you contacing us?" />
+                        <textarea
+                            class="min-h-[160px] py-[15px] px-[20px] box-border border-2 border-[#343642] rounded-[16px] bg-[transparent] text-white"
+                            id="comcom" rows="3" name="desc" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="mb-[10px]">
+                        <button type="submit" value="Submit"
+                            class="w-[117px] h-[40px] text-[#18171D] bg-[#33FF6D] text-[16px mt-[20px] rounded-full font-bold">
+                            Sumbit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <menu class="menu fixed z-[1000] top-0 left-0 bottom-0 right-0 box-border bg-[rgba(0,0,0,0.5)]">
+        <nav class="nav bg-[#282932] py-[40px] flex flex-col items-center justify-center">
+            <div class="text-[22px] font-bold text-white">Browse by Genre</div>
+            <div class="mt-[16px] flex flex-wrap justify-center gap-[8px] font-bold text-[14px] px-[28px]">
+                <a href="../list/simulation.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Simulation</a>
+                <a href="../list/adventure.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Adventure</a>
+                <a href="../list/rpg.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">RPG</a>
+                <a href="../list/casual.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Casual</a>
+                <a href="../category.html"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">More
+                    <i class="iconfont icon-youjiantou ml-[5px] text-[#33FF6D]"></i></a>
+            </div>
+            <button
+                class="menu-close mt-[32px] h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-guanbi1 items-center justify-center leading-1 text-[16px] text-white"></button>
+        </nav>
+    </menu>
+
+    <!-- search -->
+    <div class="search fixed z-[1000] top-0 left-0 bottom-0 right-0 box-border bg-[rgba(0,0,0,0.5)]">
+        <div class="inner py-[40px] px-[36px] flex flex-col items-center justify-center bg-[#282932]">
+            <div class="text-[22px] font-bold text-white">Search</div>
+            <div
+                class="flex items-center border-2 border-[#343642] rounded-full bg-[#18171D] w-full max-w-[720px] mt-[24px]">
+                <input type="text" id="searchB" placeholder="Search for …"
+                    class="h-[40px] px-[10px] w-full bg-transparent text-[14px] flex-1 text-white" />
+                <button onclick="search()"
+                    class="items-center leading-1 flex justify-center font-bold h-[40px] w-[117px] text-[#18171D] bg-[#33FF6D] rounded-full search-submit">
+                    <i class="iconfont icon-sousuo text-[16px] pt-[1px] mr-[2px]"></i>
+                    <span class="text-[14px]">Search</span>
+                </button>
+            </div>
+            <div class="mt-[16px] flex flex-wrap gap-[8px] font-bold text-[14px]">
+                <a href="../search647f647f.html?key=Bloons%20TD%206"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Bloons
+                    TD 6</a>
+                <a href="../search9c139c13.html?key=%20Terraria"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">
+                    Terraria</a>
+                <a href="../searchf9c7f9c7.html?key=Minecraft"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Minecraft</a>
+                <a href="../search6f826f82.html?key=Squid%20Game"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Squid
+                    Game</a>
+                <a href="../search3f363f36.html?key=True_Skate"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">True_Skate</a>
+                <a href="../search3ef33ef3.html?key=Game"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Game</a>
+                <a href="../searche462e462.html?key=Stardew%20Valley"
+                    class="flex justify-center items-center px-[24px] h-[36px] rounded-full leading-1 text-[#FFFFFF] bg-[#343642] hover:bg-[#33FF6D] hover:text-[#18171D]">Stardew
+                    Valley</a>
+            </div>
+            <button
+                class="search-close mt-[32px] h-[36px] w-[64px] flex border-2 border-[#343642] rounded-full bg-[#18171D] iconfont icon-guanbi1 items-center justify-center leading-1 text-[16px] text-white"></button>
+        </div>
+    </div>
+    <!--footer  -->
+    <footer class="footer bg-[#282932] pt-[40px] box-border mt-[40px]">
+        <div class="container mx-auto text-white">
+            <div class="flex items-start justify-between max-sm:block">
+                <div class="flex flex-col mr-[24px] max-md:mr-0 max-sm:mt-0">
+                    <a href="#">
+                        <img src="../static/index/img/logo.png" class="w-[120px] h-[40px] object-cover" />
+                    </a>
+                    <div class="text-[14px] text-[#666666] max-w-[700px] max-sm:max-w-full leading-[20px] mt-[10px]">
+                        Gameya is a game review platform, we have professional reviewers
+                        to screen games, install, experience, to the final description of
+                        the feedback, and finally will experience a strong game
+                        recommended to users, if you have questions feel free to contact
+                        us!
+                    </div>
+                </div>
+                <a href="#" class="flex w-[320px] h-[160px] flex-[0_0_320px] max-w-[320px] mx-auto max-sm:mt-[16px]">
+                    <img src="../static/index/img/footer.png" class="w-full h-full object-cover" />
+                </a>
+            </div>
+            <div
+                class="mt-[85px] h-[40px] max-sm:flex-col max-sm:h-[57px] max-sm:justify-center flex justify-between items-center border border-[#383838] border-x-0 border-b-0 max-lg:mt-[27px]">
+                <ul class="text-[12px] text-[#A9A9AD] flex gap-[24px] max-lg:justify-between">
+                    <li>
+                        <a href="company.html">Company</a>
+                    </li>
+                    <li>
+                        <a href="privacy.html">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="use.html">Terms of use</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="#" class="text-[12px] text-[#666666] max-sm:mt-[6px]">Copyright © 2024 chromegamer,All rights
+                    Reserved.</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var mySwiper = new Swiper(".swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 16,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // pagination: {
+            //   el: ".swiper-pagination",
+            //   dynamicBullets: true,
+            // },
+        });
+    </script>
+    <script src="../static/index/js/lazy.js"></script>
+    <script>
+        var options = {
+            success: showResponse,
+            dataType: 'json',
+            clearForm: true,
+            resetForm: true,
+        };
+
+        function showResponse(responseText, statusText) {
+            if (statusText == 'success') {
+                if (responseText) {
+                    if (responseText.status == 0) {
+                        layer.msg('Plays-Game.com is excited to hear from you and we\'ll get back to you as soon as possible!');
+                    } else {
+                        layer.msg(responseText.msg);
+                    }
+                }
+            } else {
+                layer.msg('Request failed');
+            }
+        }
+
+        $("#form").validate({
+            errorPlacement: function (error, element) {
+                element.parents("#form").append(error);
+                console.log(error);
+            },
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                reason: {
+                    required: true,
+                    minlength: 2,
+                },
+                desc: {
+                    required: true,
+                    minlength: 2,
+                }
+            },
+            messages: {
+                name: {
+                    required: " * Name is required. ",
+                    minlength: " * The length cannot be less than 2. "
+                },
+                email: {
+                    required: " * Email is required. ",
+                    email: "'please enter a true email'"
+                },
+                why: {
+                    required: " * Reason is required. ",
+                    minlength: " * The length cannot be less than 2. "
+                },
+                comcom: {
+                    required: " * Message is required. ",
+                    minlength: " * The length cannot be less than 2. "
+                },
+            },
+            submitHandler: function (form) {
+                $(form).ajaxSubmit(options);
+            }
+        });
+    </script>
+</body>
+
+
+
+</html>

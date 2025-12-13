@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: my-font;
+  src: url("../fonts/NunitoSans-VariableFont_YTLC.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: my-font !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: constant(safe-area-inset-bottom);
+  font-family: bestforandroid !important;
+  font-size: 14px;
+  background: #18171d;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+@media (min-width: 357px) {
+  .container {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1248px) {
+  .container {
+    max-width: 100% !important;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1249px) {
+  .container {
+    max-width: 1248px !important;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+}
