@@ -28,16 +28,16 @@
 
   <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Q5YZ490H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "G-C6Q5YZ490H");
-  </script>
+ 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Q5YZ490H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C6Q5YZ490H');
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com/" />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -45,41 +45,24 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
     rel="stylesheet" />
 
-  <script type="text/javascript">
-    function reward(event, url, type) {
-      document.querySelector(".body-loading").style.display = "flex";
-      setTimeout(function () {
-        showTip(url, type);
-      }, 5000);
+<!-- Event snippet for Conversion conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
     }
-    function showTip(url, type) {
-      document.querySelector(".body-loading .loader").style.display = "none";
-      document.querySelector(".tooltip").style.display = "block";
-      let text = type === "apple" ? "App Store" : "Google Play";
-      document.querySelector(".tooltip .tooltip-text p span").innerHTML =
-        text;
-      document.querySelector(".tooltip-button-continue").href = url;
-      document
-        .querySelector(".tooltip-button-cancel")
-        .addEventListener("click", function () {
-          document.querySelector(".body-loading").style.display = "none";
-          window.location.reload();
-        });
-      document
-        .querySelector(".tooltip-button-continue")
-        .addEventListener("click", function () {
-          document.querySelector(".body-loading").style.display = "none";
-        });
-
-      try {
-        gtag("event", "conversion", {
-          send_to: "G-C6Q5YZ490H/22BHCPG12dAbEO-9_qdC",
-        });
-      } catch (e) {
-        console.log(e);
-      }
-    }
-  </script>
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17808654601/0opwCPP-kdIbEImC6qtC',
+      'value': 0.01,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
   <style>
     .ads,
     .detail-main-container {
