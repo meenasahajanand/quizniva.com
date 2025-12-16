@@ -54,7 +54,7 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=AW-17800601327"
+      src="https://www.googletagmanager.com/gtag/js?id=G-C6Q5YZ490H"
     ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -62,7 +62,7 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "AW-17800601327");
+      gtag("config", "G-C6Q5YZ490H");
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
@@ -72,41 +72,22 @@
       rel="stylesheet"
     />
 
-    <script type="text/javascript">
-      function reward(event, url, type) {
-        document.querySelector(".body-loading").style.display = "flex";
-        setTimeout(function () {
-          showTip(url, type);
-        }, 5000);
-      }
-      function showTip(url, type) {
-        document.querySelector(".body-loading .loader").style.display = "none";
-        document.querySelector(".tooltip").style.display = "block";
-        let text = type === "apple" ? "App Store" : "Google Play";
-        document.querySelector(".tooltip .tooltip-text p span").innerHTML =
-          text;
-        document.querySelector(".tooltip-button-continue").href = url;
-        document
-          .querySelector(".tooltip-button-cancel")
-          .addEventListener("click", function () {
-            document.querySelector(".body-loading").style.display = "none";
-            window.location.reload();
-          });
-        document
-          .querySelector(".tooltip-button-continue")
-          .addEventListener("click", function () {
-            document.querySelector(".body-loading").style.display = "none";
-          });
-
-        try {
-          gtag("event", "conversion", {
-            send_to: "AW-17800601327/22BHCPG12dAbEO-9_qdC",
-          });
-        } catch (e) {
-          console.log(e);
-        }
-      }
-    </script>
+    <script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17808654601/0opwCPP-kdIbEImC6qtC',
+      'value': 0.01,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <style>
       .ads,
       .detail-main-container {
