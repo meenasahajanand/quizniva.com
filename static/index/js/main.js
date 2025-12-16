@@ -29,7 +29,7 @@ window.onload = function () {
         enableBackgroundScroll();
       }
     },
-    false
+    false,
   );
   menuCloseBtn.addEventListener(
     "click",
@@ -46,7 +46,7 @@ window.onload = function () {
         enableBackgroundScroll();
       }
     },
-    false
+    false,
   );
   menuBox.addEventListener(
     "click",
@@ -55,7 +55,7 @@ window.onload = function () {
         menuBtn.click();
       }
     },
-    false
+    false,
   );
   searchBtn.addEventListener(
     "click",
@@ -72,7 +72,7 @@ window.onload = function () {
         enableBackgroundScroll();
       }
     },
-    false
+    false,
   );
   searchCloseBtn.addEventListener(
     "click",
@@ -89,14 +89,14 @@ window.onload = function () {
         enableBackgroundScroll();
       }
     },
-    false
+    false,
   );
   searchInner.addEventListener(
     "click",
     function (event) {
       event.stopPropagation();
     },
-    false
+    false,
   );
 
   searchBox.addEventListener(
@@ -106,14 +106,14 @@ window.onload = function () {
         searchBtn.click();
       }
     },
-    false
+    false,
   );
   searchSubmit.addEventListener(
     "click",
     function () {
       searchBtn.click();
     },
-    false
+    false,
   );
 
   function disableBackgroundScroll() {
