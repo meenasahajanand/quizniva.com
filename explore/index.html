@@ -19,6 +19,55 @@
         content="Play and download the best free mobile games at FavDojo! Enjoy action, racing, puzzle, cooking games, and more—fun for all ages and interests." />
 
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
+    <script>
+  window.googletag = window.googletag || { cmd: [] };
+  let interstitialSlot;
+
+  googletag.cmd.push(() => {
+    // ✅ Define interstitial slot
+    interstitialSlot = googletag.defineOutOfPageSlot(
+      '/23330730517/quizniva.com_inter',
+      googletag.enums.OutOfPageFormat.INTERSTITIAL
+    );
+
+    if (interstitialSlot) {
+      interstitialSlot.addService(googletag.pubads());
+    }
+
+    googletag.enableServices();
+
+    // ✅ Preload the interstitial ad immediately after page load
+    if (interstitialSlot) {
+      googletag.display(interstitialSlot);
+    }
+  });
+
+  // ✅ Function to show interstitial and then call callback
+  function showInterstitialAd(callback) {
+    googletag.cmd.push(() => {
+      if (interstitialSlot) {
+        googletag.pubads().display(interstitialSlot);
+      }
+      // ⏳ Fast fallback: max wait 500ms
+      setTimeout(() => {
+        if (typeof callback === 'function') callback();
+      }, 500);
+    });
+  }
+</script>
+
+
+    <style>
+      #link {
+        display: none;
+      }
+
+      div.content {
+        position: fixed;
+        top: 50%;
+      }
+    </style>
 
     <style>
         .ads,
@@ -469,15 +518,14 @@
 
 
     <!-- Google tag (gtag.js) -->
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Q5YZ490H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17559910661"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'AW-17559910661');
 
-  gtag('config', 'G-C6Q5YZ490H');
-</script>
+    </script>
 
 
 </head>
