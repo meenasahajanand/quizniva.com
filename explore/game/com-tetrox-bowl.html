@@ -76,22 +76,44 @@
       rel="stylesheet"
     />
 
-    <script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+       <script type="text/javascript"> 
+    function reward(event, url, type) {
+        document.querySelector(".body-loading").style.display = "flex";
+          setTimeout(function(){
+            showTip(url, type);
+          } , 5000);
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17808654601/0opwCPP-kdIbEImC6qtC',
+    function showTip(url, type) { 
+        document.querySelector(".body-loading .loader").style.display = "none";
+        document.querySelector(".tooltip").style.display = "block";
+        let text = type === "apple" ? "App Store" : "Google Play";
+        document.querySelector(".tooltip .tooltip-text p span").innerHTML = text;
+        document.querySelector(".tooltip-button-continue").href = url;
+        document
+            .querySelector(".tooltip-button-cancel")
+            .addEventListener("click", function () {
+                document.querySelector(".body-loading").style.display = "none";
+                window.location.reload();
+            });
+        document
+            .querySelector(".tooltip-button-continue")
+            .addEventListener("click", function () {
+                document.querySelector(".body-loading").style.display = "none";
+            });
+
+
+        try{
+          gtag('event', 'conversion', {'send_to':  'AW-17808654601/0opwCPP-kdIbEImC6qtC',
       'value': 0.01,
       'currency': 'INR',
       'event_callback': callback
-  });
-  return false;
-}
-</script>
+});
+        }catch(e){
+          console.log(e);
+        }
+    }
+
+    </script>
     <style>
       .ads,
       .detail-main-container {
