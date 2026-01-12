@@ -19,9 +19,9 @@
     <meta name="msapplication-config" content="../favicon/browserconfig.xml" />
     <meta name="theme-color" content="#000" />
     <link rel="alternate" type="application/rss+xml" href="../404" />
-    <meta name="description" content="Credit cards from the best banks and loan recommendations. - lightingport." />
+    <meta name="description" content="Credit cards from the best banks and loan recommendations. - quizniva.com" />
     <meta property="og:image" content="https://quizniva.com/_next/lightingporta051.png" />
-    <title>lightingport</title>
+    <title>quizniva.com</title>
     <meta name="robots" content="noindex" />
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="../_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" type="font/woff2"
@@ -50,7 +50,7 @@
                     class="flex min-h-[72px] flex-wrap items-center sm:justify-start sm:flex-nowrap z-50 w-full border-b border-white/[.5] text-sm py-3 sm:py-0 mb-0 md:mb-5 bg-undefined ">
                     <nav class="relative max-w-7xl w-full mx-auto sm:flex sm:items-center sm:justify-between px-3 xl:px-0"
                         aria-label="Global">
-                        <div class="flex items-center justify-between"><a aria-label="lightingport"
+                        <div class="flex items-center justify-between"><a aria-label="quizniva.com"
                                 class="retain-query-link" href="../index.html"><button type="button"
                                     class="hs-collapse-toggle p-2 inline-flex  justify-center items-center gap-2 rounded-md border
            border-undefined/50 font-medium text-undefined/50 shadow-sm align-middle hover:bg-undefined/10 hover:text-undefined 
@@ -67,7 +67,7 @@
                                         <path
                                             d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z">
                                         </path>
-                                    </svg></button></div>
+                                    </svg></button></a></div>
             </div>
             <div id="navbar-collapse-with-animation"
                 class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
@@ -90,7 +90,7 @@
                             class="false text-2xl mt-5 md:mt-0 md:text-4xl lg:text-5xl font-[500] tracking-tighter leading-tight md:leading-none mb-0 text-center capitalize">
                             Terms of Use</h1>
                         <div class="mx-auto max-w-4xl px-3 py-0 md:py-5 w-full">
-                            <p class="text-gray-500">quizniva.com<!-- --> is an initiative of MDA Tech, a company
+                            <p class="text-gray-500">quizniva.com is an initiative of MDA Tech, a company
                                 based in Estonia. Our main goal is to provide high-quality information to our users.
                                 By accessing and using our website, you agree to follow and be bound by the
                                 following terms and conditions.</p>
@@ -102,7 +102,7 @@
                             <p class="text-gray-500">We reserve the right to modify these terms at any time without
                                 prior notice. Therefore, we recommend that you review them periodically.</p>
                             <h3 class="font-bold text-gray-800 text-2xl text-left mt-12">Services Offered</h3>
-                            <p class="text-gray-500">quizniva.com<!-- --> aims to deliver high-quality information
+                            <p class="text-gray-500">quizniva.com aims to deliver high-quality information
                                 to users. We offer a variety of content, features, and services, which may include
                                 articles, reports, newsletters, among others.</p>
                             <h3 class="font-bold text-gray-800 text-2xl text-left mt-12">Usage Restrictions</h3>
