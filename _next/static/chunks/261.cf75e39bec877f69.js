@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[261],{261:function(e,t,s){s.r(t),s.d(t,{default:function(){return n}});var u=s(5893);function n(e){let{children:t}=e;return(0,u.jsx)("ul",{className:"list-disc list-outside space-y-5 pl-5 text-gray-800",children:t})}}}]);

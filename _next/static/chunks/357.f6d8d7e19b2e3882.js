@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[357],{357:function(e,l,n){n.r(l),n.d(l,{default:function(){return r}});var t=n(5893);function r(e){let{content:l}=e;return l=l.replace("<li>","").replace("</li>",""),(0,t.jsx)("li",{className:"text-gray-500 pl-2",dangerouslySetInnerHTML:{__html:l}})}n(7294)}}]);
