@@ -41,8 +41,7 @@
     <script src="../_next/static/SQWtI1SwaOKcpIlY1wb3i/_ssgManifest.js" defer=""></script>
 </head>
 
-<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHBB6X69" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
+<body><!-- iframe remove -->
     <div id="__next">
         <div class="font-sans __variable_8b3a0b __variable_97918b">
             <div>
