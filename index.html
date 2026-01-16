@@ -61,75 +61,75 @@
             }
         })();
     </script>
- 
- 
 
 
- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17808654601"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17808654601"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'AW-17808654601');
+        gtag('config', 'AW-17808654601');
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C6Q5YZ490H"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'G-C6Q5YZ490H');
+        gtag('config', 'G-C6Q5YZ490H');
     </script>
     <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" crossorigin="anonymous"></script>
-<script>
-  window.googletag = window.googletag || { cmd: [] };
-  let interstitialSlot;
+    <script>
+        window.googletag = window.googletag || { cmd: [] };
+        let interstitialSlot;
 
-  googletag.cmd.push(() => {
-    // ✅ Define interstitial slot
-    interstitialSlot = googletag.defineOutOfPageSlot(
-      '/23330730517/quizniva.com_inter',
-      googletag.enums.OutOfPageFormat.INTERSTITIAL
-    );
+        googletag.cmd.push(() => {
+            // ✅ Define interstitial slot
+            interstitialSlot = googletag.defineOutOfPageSlot(
+                '/23330730517/quizniva.com_inter',
+                googletag.enums.OutOfPageFormat.INTERSTITIAL
+            );
 
-    if (interstitialSlot) {
-      interstitialSlot.addService(googletag.pubads());
-    }
+            if (interstitialSlot) {
+                interstitialSlot.addService(googletag.pubads());
+            }
 
-    googletag.enableServices();
+            googletag.enableServices();
 
-    // ✅ Preload the interstitial ad immediately after page load
-    if (interstitialSlot) {
-      googletag.display(interstitialSlot);
-    }
-  });
+            // ✅ Preload the interstitial ad immediately after page load
+            if (interstitialSlot) {
+                googletag.display(interstitialSlot);
+            }
+        });
 
-  // ✅ Function to show interstitial and then call callback
-  function showInterstitialAd(callback) {
-    googletag.cmd.push(() => {
-      if (interstitialSlot) {
-        googletag.pubads().display(interstitialSlot);
-      }
-      // ⏳ Fast fallback: max wait 500ms
-      setTimeout(() => {
-        if (typeof callback === 'function') callback();
-      }, 500);
-    });
-  }
-</script>
+        // ✅ Function to show interstitial and then call callback
+        function showInterstitialAd(callback) {
+            googletag.cmd.push(() => {
+                if (interstitialSlot) {
+                    googletag.pubads().display(interstitialSlot);
+                }
+                // ⏳ Fast fallback: max wait 500ms
+                setTimeout(() => {
+                    if (typeof callback === 'function') callback();
+                }, 500);
+            });
+        }
+    </script>
 
 
     <style>
-      #link {
-        display: none;
-      }
+        #link {
+            display: none;
+        }
 
-      div.content {
-        position: fixed;
-        top: 50%;
-      }
+        div.content {
+            position: fixed;
+            top: 50%;
+        }
     </style>
 </head>
 
@@ -142,7 +142,9 @@
                     <nav class="relative max-w-7xl w-full mx-auto sm:flex sm:items-center sm:justify-between px-3 xl:px-0"
                         aria-label="Global">
                         <div class="flex items-center justify-between"><a aria-label="lightingport"
-                                class="retain-query-link" href="index.html"><img alt="lightingport" width="150" height="80" style="max-width:150px;height:80px;object-fit:contain;display:block;" src="/_next/lightingporta051.png" /></a>
+                                class="retain-query-link" href="index.html"><img alt="lightingport" width="150"
+                                    height="80" style="max-width:150px;height:80px;object-fit:contain;display:block;"
+                                    src="/_next/lightingporta051.png" /></a>
                             <div class="sm:hidden"><button type="button"
                                     class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border
                                    border-undefined/50 font-medium text-undefined/50 shadow-sm align-middle hover:bg-undefined/10 hover:text-undefined 
@@ -711,6 +713,7 @@
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
         data-cf-beacon='{"version":"2024.11.0","token":"61f9aa7413b74bf29a9c9ee1d9bc6142","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 
 </html>
